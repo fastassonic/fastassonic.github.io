@@ -1,39 +1,77 @@
-html,body{
-  margin:0;
-  padding:0;
-  display:flex;
-  height:100%;
+html, body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
   flex-direction: column;
 }
 
+p {
+  font-size: 22px;
+}
 
-.body{
-  font-family:courier;
-  color:green;
-  display:flex;
-  flex-grow:1;
-  background-color:black;
-  }
+.body {
+  border: 2px solid rgb(0, 255, 0);
+  font-family: courier;
+  color: rgb(0, 255, 0);
+  display: flex;
+  flex-grow: 1;
+  background-color: black;
+  flex-direction: column;
+  padding: 20px;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-.header{
-  position:sticky;
-  top:0;
-  z-index:100;
-  border-bottom:2px solid;
-  display:flex;
-  justify-content: center;
-  background-color:black;
-  h1
-  {
-    color:white;
-    animation: fadeIn 0.5s ease-in forwards;
-  }
-  h1:hover{
-    color:blue;
-  }
+.header {
+  border: 2px solid rgb(0, 255, 0);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
 }
 
+.header h1 {
+  margin: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+.footer{
+  border: 2px solid rgb(0, 255, 0);
+  color: white;
+
+  background-color: black;
+
+}
+
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header-box {
+  flex-direction: row;
+  min-width: 100px;
+  min-height: 80px;
+  border: 2px dashed white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* I do not know why, I cannot fathom why but the footer text is not consistent*/ 
+.footer-text{
+  font-size:15px;
+  color:grey;
+  
+
+}
